@@ -1,0 +1,9 @@
+- make sure all \texttt{}s are consistently placed 
+- align equation in proposition 
+- add parting remarks to conclusion 
+- make sure you can get the maximum sum of subarray, maximum subarray sum phrase correct AND FIX IT EVERYWHERE IN THE DOCUMENT
+- remove space in Algorithm 1 
+
+done list:
+- change all C++ code to pseudocode
+- fix footnote on problem statement
