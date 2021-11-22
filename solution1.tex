@@ -1,0 +1,25 @@
+
+\section{Naive Solution}
+The naive method to solve this problem would be to brute force through all possible pairs of points such that the smaller of these is the beginning of the sub-array and the greater of these is the end of the sub-array.
+
+\begin{algorithm}
+\caption{}\label{naive}
+\begin{algorithmic}[1]
+\Procedure{Naive}{arr[n]}
+\State $\vars{maxi} \gets -\infty$
+\For{$\vars{i}\gets 1, n$}
+    \For{$\vars{j} \gets i, n$}
+        \State $\vars{sum} \gets 0$
+        \For{$\vars{ptr} \gets i, j$} 
+            \State $\vars{sum := sum + arr[ptr]}$
+        \EndFor
+        \State $\vars{maxi = max(maxi, sum)}$
+    \EndFor
+\EndFor 
+\State \Return $\vars{maxi}$
+\end{algorithmic}
+\end{algorithm}
+
+\noindent We perform an upper bound of $\texttt{n}$ operations over $\binom{n}{2}$ different points considered. Note that for every value of $\texttt{i}$, atleast the same value is considered for $\texttt{j}$, accounting for the fact that atleast one element must be part of a potential subarray for it to count as a non-empty subarray. Even in its best implementation, this amounts to an eye-watering $O(n^3)$ solution as the outer for loops run with $n^2$ \footnote{$\binom{n}{2}$ simplifies to $\frac{n^2-n}{2}$ and as Big-O cares about the largest degree in the expression and does not care about any constants, our complexity is $O(n^2)$ for $\binom{n}{2}$ iterations.} complexity and each such iteration continues for a worst-case of $n$ operations.  \newline
+
+\noindent Surely, we can do better.

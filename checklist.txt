@@ -1,0 +1,21 @@
+
+when ready to use for something:
+- diagram needs to be annotated on another laptop and \texttt{arr[i]} like thing should be added on top of the squares 
+- make sure the document renders as intended when you finally use it for anything -> Kadane's algorithm keeps going onto another page 
+
+done list:
+- change all C++ code to pseudocode
+- fix footnote on problem statement
+- remove space in Algorithm 1 (and also got the return statement to be in its proper place)
+- align equation in proposition (there's a weird space before the align environment starts but I figured that its okay to keep - it's a hassle to work around and honestly, it doesn't look that bad)
+- make sure you can get the maximum sum of subarray, maximum subarray sum phrase correct AND FIX IT EVERYWHERE IN THE DOCUMENT
+- done - do I need to add notes for the for loops saying how they account for the non-empty condition? (paragraphs inserted in first three solutions)
+
+make final check:
+- make sure all \texttt{}s are consistently placed 
+    - conventions
+        - all variables referenced in code (e.g. index) should be in \texttt{}
+        - do not include other numbers or math stuff that is not part of code
+   - consider situation for 'n' - whether to keep in \texttt{} or to leave in math format???
+- add parting remarks to conclusion (ehh, is it really necessary?) - don't think its necessary, so won't do (also I am lazy, no u)
+
