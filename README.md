@@ -1,1 +1,0 @@
-# Algorithms-of-the-Months
