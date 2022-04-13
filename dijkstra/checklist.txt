@@ -1,0 +1,19 @@
+
+KMP algorithm section
+=====================
+structure:
+- show idea of longest prefix/suffix thing
+- introduce definition/idea of the LPS array (longest prefix suffix array)
+    - 
+    - notion of longest "proper" prefix 
+- show how the algorithm works once the LPS array is known
+- explicitly state that the simulation shown previously is a proof of application/use? (can't locate the right word proof of use, proof of case...sadge) 
+- elaborate on how to find the LPS array (consider various methods to show how this can be done, in order of increasing efficiency)
+   - method 1: brute force 
+        - for each possible ending index 'i', consider all suffixes and prefixes and determine what to place at that particular index in the LPS array 
+   - method 2: specific algorithm used to compute the LPS array
+- final section showing time complexity with final and most efficient method of LPS array chosen (mention Big-O rules in this section)
+- proof of the algorithm/LPS array? (idk how we would go about doing this)
+
+sources:
+https://www.youtube.com/watch?v=4jY57Ehc14Y

@@ -1,0 +1,19 @@
+
+\section{Prelude}
+
+\begin{theorem} [Relaxation of an Edge]
+
+Relaxing an edge is the idea of reducing the distance to a node if the distance found to that node in the current iteration is smaller than the tabulated distance. \\
+
+More formally, if the current node at the current iteration is node $u$, then, given that $d_x$ represents the tabulated distance to node $x$, upon discovering node $v$ in $u$'s adjacency list on edge of weight $w$,
+
+\[
+    \texttt{if } (d_v > d_u + w): \\
+        d_v = d_u + w
+\]
+
+or, the more concise
+
+$$d_v = min(d_v, d_u + w)$$
+
+\end{theorem}
